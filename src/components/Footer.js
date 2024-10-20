@@ -1,4 +1,4 @@
-import './Footer.css'; // Assuming you'll style the footer with this file
+import "./Footer.css"; // Assuming you'll style the footer with this file
 
 import { Button, Col, Collapse, Container, Form, Input, Row } from "reactstrap";
 import React, { useEffect, useState } from "react";
@@ -52,7 +52,8 @@ const MasterFooter = ({
                     <div className="subscribe">
                       <h4>Stay Updated!</h4>
                       <p>
-                        Never miss out on the latest news and offers from us. Sign up for our newsletter!
+                        Never miss out on the latest news and offers from us.
+                        Sign up for our newsletter!
                       </p>
                     </div>
                   </Col>
@@ -92,26 +93,48 @@ const MasterFooter = ({
                     About Us <span className="according-menu"></span>
                   </h4>
                 </div>
-                <Collapse isOpen={width ? (collapse === 1 ? isOpen : false) : true}>
+                <Collapse
+                  isOpen={width ? (collapse === 1 ? isOpen : false) : true}
+                >
                   <div className="footer-content">
                     <p>
-                      We are a company specializing in semi-automatic cable assembly. Our mission is to deliver high-quality products with cutting-edge technology.
+                      We are a company specializing in semi-automatic cable
+                      assembly. Our mission is to deliver high-quality products
+                      with cutting-edge technology.
                     </p>
                     <div className="footer-social">
                       <ul>
                         <li>
-                          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-facebook" aria-hidden="true"></i>
+                          <a
+                            href="https://www.facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i
+                              className="fa fa-facebook"
+                              aria-hidden="true"
+                            ></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://twitter.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <i className="fa fa-twitter" aria-hidden="true"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-instagram" aria-hidden="true"></i>
+                          <a
+                            href="https://www.instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i
+                              className="fa fa-instagram"
+                              aria-hidden="true"
+                            ></i>
                           </a>
                         </li>
                       </ul>
@@ -135,18 +158,22 @@ const MasterFooter = ({
                     Services <span className="according-menu"></span>
                   </h4>
                 </div>
-                <Collapse isOpen={width ? (collapse === 2 ? isOpen : false) : true}>
+                <Collapse
+                  isOpen={width ? (collapse === 2 ? isOpen : false) : true}
+                >
                   <div className="footer-content">
                     <ul>
-                      <a>
-                        <Link to="/services"> Semi-automatic cable assembly</Link>
-                      </a>
-                      <a>
-                        <Link to="/services">   Custom cable design   </Link>
-                      </a>
-                      <a>
+                      <li key="semi-automatic">
+                        <Link to="/services">
+                          Semi-automatic cable assembly
+                        </Link>
+                      </li>
+                      <li key="custom-design">
+                        <Link to="/services">Custom cable design</Link>
+                      </li>
+                      <li key="prototyping">
                         <Link to="/services">Prototyping services</Link>
-                      </a>
+                      </li>
                     </ul>
                   </div>
                 </Collapse>
@@ -167,17 +194,21 @@ const MasterFooter = ({
                     Contact Us <span className="according-menu"></span>
                   </h4>
                 </div>
-                <Collapse isOpen={width ? (collapse === 3 ? isOpen : false) : true}>
+                <Collapse
+                  isOpen={width ? (collapse === 3 ? isOpen : false) : true}
+                >
                   <div className="footer-content">
                     <ul className="contact-list">
                       <li>
-                        <i className="fa fa-map-marker"></i> Address: Route Msdour-Jammel Bembla, Monastir, Tunisia
+                        <i className="fa fa-map-marker"></i> Address: Route
+                        Msdour-Jammel Bembla, Monastir, Tunisia
                       </li>
                       <li>
                         <i className="fa fa-phone"></i> Phone: +216-123-456-789
                       </li>
                       <li>
-                        <i className="fa fa-envelope"></i> Email: info@company.com
+                        <i className="fa fa-envelope"></i> Email:
+                        info@company.com
                       </li>
                     </ul>
                   </div>

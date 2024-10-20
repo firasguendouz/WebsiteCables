@@ -1,4 +1,4 @@
-import { Col, Container, Media, Row } from 'reactstrap';
+import { Col, Container, Row } from 'reactstrap';
 import React, { Fragment } from 'react';
 
 const CopyRight = ({layout, fluid}) => {
