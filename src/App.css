@@ -1,7 +1,18 @@
+/* Reset default margins and set height to 100% for full-page layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   text-align: center;
 }
 
+/* Logo styling with spin animation */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +24,16 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header styles */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,13 +47,44 @@
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Flexbox layout ensures the content takes up the available space, keeping the footer at the bottom */
+.content {
+  flex: 1;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333; /* Dark background for contrast */
+  color: white; /* White text for visibility */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(12px + 1.5vmin);
   }
-  to {
-    transform: rotate(360deg);
+  
+  footer {
+    padding: 15px;
   }
 }
+

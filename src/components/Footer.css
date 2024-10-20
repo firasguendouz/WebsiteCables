@@ -1,0 +1,141 @@
+/* Basic styling for the footer */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 40px 0; /* Add some space inside the footer */
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Layout for the footer content */
+  .footer-theme {
+    display: flex;
+    justify-content: space-around; /* Evenly space out the columns */
+    flex-wrap: wrap; /* Ensure responsive layout */
+  }
+  
+  .footer-title h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .footer-contant {
+    margin-bottom: 20px;
+  }
+  
+  .footer-contant p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Social icons in the footer */
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-social ul li {
+    display: inline-block;
+  }
+  
+  .footer-social ul li a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social ul li a:hover {
+    color: #f39c12; /* Change color on hover for better interaction */
+  }
+  
+  /* Contact list styling */
+  .contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-list li i {
+    margin-right: 10px;
+    color: #f39c12; /* Icon color for visual distinction */
+  }
+  
+  /* Subscribe form styling */
+  .subscribe {
+    text-align: left;
+    padding: 20px;
+    background-color: #444; /* Slightly lighter background for the subscription section */
+    border-radius: 10px;
+  }
+  
+  .subscribe h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subscribe-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+  }
+  
+  /* Responsive Footer Styling */
+  @media (max-width: 768px) {
+    .footer-theme {
+      flex-direction: column; /* Stack columns on top of each other on small screens */
+      align-items: center;
+    }
+  
+    .subscribe-form {
+      flex-direction: column; /* Stack input and button vertically */
+      width: 100%;
+    }
+  
+    .subscribe-form input {
+      margin-bottom: 10px;
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .subscribe-form button {
+      width: 100%;
+    }
+  
+    .footer-title h4 {
+      font-size: 16px;
+    }
+  
+    .footer-social ul {
+      justify-content: space-around;
+    }
+  }
+  

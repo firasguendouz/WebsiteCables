@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Invest from './pages/Invest'; // Import the Invest page
+import React from 'react';
+import Services from './pages/Services';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        {/* Header Component */}
+        <Header />
+        {/* Content Section */}
+        <div className="content">
+          <Routes>
+            {/* Home Page Route */}
+            <Route path="/" element={<Home />} />
+            {/* About Page Route */}
+            <Route path="/about" element={<About />} />
+            {/* Services Page Route */}
+            <Route path="/services" element={<Services />} />
+            {/* Contact Page Route */}
+            <Route path="/contact" element={<Contact />} />
+            {/* Invest Page Route */}
+            <Route path="/invest" element={<Invest />} />
+          </Routes>
+        </div>
+        {/* Footer Component */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
