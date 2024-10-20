@@ -2,6 +2,8 @@ import './About.css'; // Assuming you'll add the CSS styles here
 
 import { FaEnvelope, FaGlobe, FaLinkedin } from 'react-icons/fa'; // FontAwesome icons
 
+import Brother1 from '../assets/Brother1.jpg';
+import Brother2 from '../assets/Brother1.jpg';
 import React from 'react';
 
 const About = () => {
@@ -11,14 +13,14 @@ const About = () => {
       linkedin: 'https://linkedin.com/in/brother1',
       website: 'https://brother1website.com',
       email: 'brother1@example.com',
-      image: '/images/brother1.jpg', // Replace with actual image path
+      image: Brother1, // Replace with actual image path
     },
     {
       name: 'Brother 2',
       linkedin: 'https://linkedin.com/in/brother2',
       website: 'https://brother2website.com',
       email: 'brother2@example.com',
-      image: '/images/brother2.jpg', // Replace with actual image path
+      image: Brother2, // Replace with actual image path
     },
   ];
 
@@ -33,7 +35,7 @@ const About = () => {
       <div className="brother-cards">
         {brothers.map((brother, index) => (
           <div key={index} className="brother-card">
-            <img src={brother.image} alt={brother.name} />
+            <img src={brother.image} alt={brother.name}  />
             <h3>{brother.name}</h3>
             <div className="brother-icons">
               <a href={brother.linkedin} target="_blank" rel="noopener noreferrer">

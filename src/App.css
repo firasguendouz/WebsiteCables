@@ -3,6 +3,8 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #1a1a1a; /* Dark background for the app */
+  color: #f0f0f0; /* Light text color for readability */
 }
 
 .App {
@@ -45,10 +47,16 @@ html, body {
   color: white;
 }
 
+/* Updated App-link for orange theme */
 .App-link {
-  color: #61dafb;
+  color: #ff8c00; /* Orange for link color */
   text-decoration: none;
   margin-top: 20px;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #e67300; /* Darker orange on hover */
 }
 
 /* Flexbox layout ensures the content takes up the available space, keeping the footer at the bottom */
@@ -58,8 +66,8 @@ html, body {
 
 /* Footer styling */
 footer {
-  background-color: #333; /* Dark background for contrast */
-  color: white; /* White text for visibility */
+  background-color: #1a1a1a; /* Dark background for contrast */
+  color: #f0f0f0; /* White text for visibility */
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -68,13 +76,13 @@ footer {
 }
 
 footer a {
-  color: #61dafb;
+  color: #ff8c00; /* Orange link color in footer */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #f39c12;
+  color: #e67300; /* Darker orange on hover */
 }
 
 /* Responsive adjustments */
@@ -87,4 +95,6 @@ footer a:hover {
     padding: 15px;
   }
 }
+
+
 

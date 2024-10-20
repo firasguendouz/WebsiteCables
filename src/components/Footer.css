@@ -1,8 +1,8 @@
 /* Basic styling for the footer */
 footer {
-    background-color: #333; /* Dark background for contrast */
-    color: #fff; /* White text for readability */
-    padding: 40px 0; /* Add some space inside the footer */
+    background-color: #1a1a1a; /* Dark background for a sleek look */
+    color: #fff;
+    padding: 50px 0;
     text-align: center;
     position: relative;
     width: 100%;
@@ -11,21 +11,18 @@ footer {
   /* Layout for the footer content */
   .footer-theme {
     display: flex;
-    justify-content: space-around; /* Evenly space out the columns */
-    flex-wrap: wrap; /* Ensure responsive layout */
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   
   .footer-title h4 {
     font-size: 18px;
+    color: #ff8c00; /* Orange title */
     margin-bottom: 15px;
     cursor: pointer;
   }
   
-  .footer-contant {
-    margin-bottom: 20px;
-  }
-  
-  .footer-contant p {
+  .footer-content p {
     font-size: 14px;
     line-height: 1.6;
   }
@@ -39,10 +36,6 @@ footer {
     gap: 20px;
   }
   
-  .footer-social ul li {
-    display: inline-block;
-  }
-  
   .footer-social ul li a {
     color: #fff;
     font-size: 20px;
@@ -50,7 +43,7 @@ footer {
   }
   
   .footer-social ul li a:hover {
-    color: #f39c12; /* Change color on hover for better interaction */
+    color: #ff8c00; /* Orange hover for social icons */
   }
   
   /* Contact list styling */
@@ -65,21 +58,21 @@ footer {
   
   .contact-list li i {
     margin-right: 10px;
-    color: #f39c12; /* Icon color for visual distinction */
+    color: #ff8c00; /* Orange icons for contact info */
   }
   
   /* Subscribe form styling */
   .subscribe {
     text-align: left;
-    padding: 20px;
-    background-color: #444; /* Slightly lighter background for the subscription section */
+    padding: 25px;
+    background-color: #333;
     border-radius: 10px;
   }
   
   .subscribe h4 {
     margin-bottom: 15px;
     font-size: 18px;
-    color: #fff;
+    color: #ff8c00; /* Orange heading for subscribe section */
   }
   
   .subscribe-form {
@@ -98,32 +91,32 @@ footer {
   .subscribe-form button {
     padding: 10px 20px;
     border: none;
-    background-color: #f39c12;
-    color: #fff;
+    background-color: #ff8c00;
+    color: #1a1a1a;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .subscribe-form button:hover {
-    background-color: #d35400; /* Darker orange on hover */
+    background-color: #e67300; /* Darker orange on hover */
   }
   
   /* Responsive Footer Styling */
   @media (max-width: 768px) {
     .footer-theme {
-      flex-direction: column; /* Stack columns on top of each other on small screens */
+      flex-direction: column;
       align-items: center;
     }
   
     .subscribe-form {
-      flex-direction: column; /* Stack input and button vertically */
+      flex-direction: column;
       width: 100%;
     }
   
     .subscribe-form input {
       margin-bottom: 10px;
-      width: 100%; /* Full width on mobile */
+      width: 100%;
     }
   
     .subscribe-form button {
@@ -132,10 +125,6 @@ footer {
   
     .footer-title h4 {
       font-size: 16px;
-    }
-  
-    .footer-social ul {
-      justify-content: space-around;
     }
   }
   

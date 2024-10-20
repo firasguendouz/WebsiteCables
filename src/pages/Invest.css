@@ -1,24 +1,27 @@
 .invest-container {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
   }
   
   .invest-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    color: #ff8c00; /* Orange title */
+    letter-spacing: 1px;
   }
   
   .invest-subtitle {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
+    font-size: 1.3rem;
+    color: #b0b0b0;
+    margin-bottom: 50px;
   }
   
   .invest-image-container {
-    margin: 20px 0;
+    margin: 30px 0;
     text-align: center;
   }
   
@@ -26,18 +29,19 @@
     width: 100%;
     height: auto;
     max-width: 900px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
   }
   
   .invest-content {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 40px;
   }
   
   .invest-content h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #ff8c00; /* Orange for headings */
+    margin-bottom: 25px;
   }
   
   .invest-content ul {
@@ -46,35 +50,46 @@
   }
   
   .invest-content ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #b0b0b0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .invest-content ul li:before {
+    content: '•'; /* Custom bullet point */
+    color: #ff8c00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
   }
   
   .invest-content p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 30px;
   }
   
   .invest-content a {
-    color: #f39c12;
+    color: #ff8c00; /* Orange links */
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .invest-content a:hover {
-    color: #d35400;
+    color: #e67300; /* Darker orange on hover */
   }
   
   /* Responsive styling */
   @media (max-width: 768px) {
     .invest-container h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   
     .invest-content h2 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
   

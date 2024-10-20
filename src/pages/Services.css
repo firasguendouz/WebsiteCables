@@ -1,56 +1,63 @@
 .services-container {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #1a1a1a; /* Dark background for a sleek look */
+    color: #f0f0f0;
   }
   
   .services-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #ff8c00; /* Orange title */
+    letter-spacing: 1px;
   }
   
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
   }
   
   .service-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background-color: #2a2a2a; /* Dark card background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    width: 100%;
   }
   
   .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+    box-shadow: 0 12px 24px rgba(255, 140, 0, 0.4); /* Orange hover shadow */
   }
   
   .service-icon {
-    font-size: 3rem;
-    color: #f39c12;
-    margin-bottom: 15px;
+    font-size: 3.2rem;
+    color: #ff8c00; /* Neon orange icon */
+    margin-bottom: 20px;
   }
   
   .service-card h3 {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 1.4rem;
+    color: #f0f0f0;
     margin: 0;
   }
   
+  /* Responsive design for smaller screens */
   @media (max-width: 768px) {
     .services-title {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   
     .service-card {
-      padding: 15px;
+      padding: 20px;
     }
   
     .service-icon {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
   }
   
