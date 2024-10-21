@@ -51,7 +51,7 @@ const Home = () => {
           <h1 className="hero-title">
             Innovative Cable Solutions for Every Industry
           </h1>
-          <button className="cta-button">Explore Our Products</button>
+          <button className="cta-button">Explore Our Services</button>
         </div>
       </section>
 
